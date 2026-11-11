@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clear View | Service - detail</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="images/logo2.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="service-detail.css">
+      <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+ 
+<header class="site-header">
+ 
+    <div class="header-container">
+ 
+ 
+        <a
+            href="index.html"
+            class="brand"
+            aria-label="AquaScape Home"
+>
+ 
+            <div class="brand-logo">
+ 
+                <img
+                    src="images/logo2.png"
+                    alt="Clear View"
+>
+ 
+            </div>
+ 
+            <div class="brand-content">
+ 
+                <div class="brand-name">
+ 
+               Clear View
+ 
+                </div>
+ 
+                <span class="brand-tagline">
+                    See Better...
+</span>
+ 
+            </div>
+ 
+        </a>
+ 
+ 
+ 
+        <nav
+            class="main-nav"
+            id="mainNav"
+            aria-label="Primary navigation"
+>
+ 
+ 
+            <div class="nav-item home-dropdown">
+ 
+                <a
+                    href="index.html"
+                    class="nav-link"
+>
+ 
+                    Home
+ 
+                    <span class="dropdown-arrow"></span>
+ 
+                </a>
+ 
+                <div class="dropdown-menu">
+ 
+                    <a href="index.html">
+                        Home 1
+</a>
+ 
+                    <a href="home2.html">
+                        Home 2
+</a>
+ 
+                </div>
+ 
+            </div>
+ 
+ 
+ 
+            <div class="nav-item">
+ 
+                <a
+                    href="about.html"
+                    class="nav-link"
+>
+                    About
+</a>
+ 
+            </div>
+ 
+ 
+ 
+            <div class="nav-item">
+ 
+                <a
+                    href="services.html"
+                    class="nav-link"
+>
+                    Services
+</a>
+ 
+            </div>
+ 
+ 
+
+ 
+           <div class="nav-item">
+ 
+                <a
+                    href="products.html"
+                    class="nav-link"
+>
+                    Products
+</a>
+
+</div>
+ 
+ 
+            <div class="nav-item">
+ 
+                <a
+                    href="eye.html"
+                    class="nav-link"
+>
+                    Eye Testing
+</a>
+ 
+            </div>
+ 
+ 
+ 
+            <div class="nav-item">
+ 
+                <a
+                    href="contact.html"
+                    class="nav-link"
+>
+                    Contact
+</a>
+ 
+            </div>
+ 
+        </nav>
+ 
+ 
+ 
+        <div class="header-actions">
+ 
+ 
+            <button
+                type="button"
+                class="icon-button"
+                id="directionBtn"
+                title="Toggle RTL / LTR"
+                aria-label="Toggle RTL / LTR"
+>
+ 
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+>
+ 
+                    <path d="M4 7h15"></path>
+<path d="M4 7l3-3"></path>
+<path d="M4 7l3 3"></path>
+<path d="M20 17H5"></path>
+<path d="M20 17l-3-3"></path>
+<path d="M20 17l-3 3"></path>
+ 
+                </svg>
+ 
+            </button>
+ 
+ 
+ 
+            <button
+                type="button"
+                class="icon-button"
+                id="themeBtn"
+                title="Toggle Dark / Light Mode"
+                aria-label="Toggle Dark / Light Mode"
+>
+ 
+                <svg
+                    class="sun-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+>
+ 
+                    <circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v2"></path>
+<path d="M12 20v2"></path>
+<path d="M4.93 4.93l1.41 1.41"></path>
+<path d="M17.66 17.66l1.41 1.41"></path>
+<path d="M2 12h2"></path>
+<path d="M20 12h2"></path>
+<path d="M4.93 19.07l1.41-1.41"></path>
+<path d="M17.66 6.34l1.41-1.41"></path>
+ 
+                </svg>
+ 
+                <svg
+                    class="moon-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+>
+ 
+                    <path d="M21 12.8A9 9 0 1 1 11.2 3A7 7 0 0 0 21 12.8Z"></path>
+ 
+                </svg>
+ 
+            </button>
+ 
+ 
+ 
+            <a
+                href="contact.html#contact-form"
+                class="login-btn"
+>
+                Book Now
+</a>
+ 
+ 
+ 
+            <button
+                type="button"
+                class="menu-button"
+                id="menuBtn"
+                aria-label="Open Menu"
+>
+ 
+                <span></span>
+<span></span>
+<span></span>
+ 
+            </button>
+ 
+        </div>
+ 
+    </div>
+ 
+</header>
+
+
+
+
+
+<!-- SERVICE DETAILS HERO -->
+<section class="sd-hero">
+    <div class="sd-hero-bg"></div>
+
+    <div class="sd-hero-inner">
+        <div class="sd-hero-content">
+            <span class="sd-hero-label">EXPERTISE · PRECISION · PERSONAL CARE</span>
+
+            <h1>
+                A World of Care.<br>
+                A Clearer Way to See.
+            </h1>
+
+            <p>
+                Discover thoughtful vision care through comprehensive
+                eye examinations, personalised eyewear, protective
+                sunglasses and precision lens solutions.
+            </p>
+
+            <div class="sd-hero-actions">
+                <a href="contact.html#contact-form" class="sd-hero-btn">
+                    Book an Appointment <span>↗</span>
+                </a>
+
+               
+            </div>
+
+            <div class="sd-hero-note">
+                <span></span>
+                THOUGHTFUL CARE FOR EVERY VISION
+            </div>
+        </div>
+
+        <div class="sd-hero-visual">
+            <img src="images/service-detail hero.jpg"
+                 alt="Professional eye care and vision examination">
+
+            <div class="sd-hero-floating">
+                <span>01 — 04</span>
+                <p>Every Detail Matters.</p>
+                <small>Personalised vision care</small>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     01. COMPREHENSIVE EYE EXAMINATION
+====================================== -->
+<section class="service-detail-section" id="eye-examination">
+    <div class="service-detail-container">
+
+        <div class="service-detail-image">
+            <img src="images/service detail service1.jpg"
+                 alt="Professional comprehensive eye examination">
+            <span class="service-image-caption">01 — PRECISION & CARE</span>
+        </div>
+
+        <div class="service-detail-content">
+            <span class="service-eyebrow">01 / COMPREHENSIVE EYE EXAMINATION</span>
+
+            <h2>The Science of <em>Clear Vision.</em></h2>
+
+            <p class="service-intro">
+                See beyond the surface. Discover a deeper understanding
+                of your vision through professional expertise,
+                comprehensive assessments and personalised attention.
+                Every detail contributes to understanding your visual needs.
+            </p>
+
+            <div class="service-detail-divider"></div>
+
+            <h3>What Your Examination Includes</h3>
+
+            <div class="service-detail-list">
+                <div>
+                    <span>01</span>
+                    <p><strong>Visual Acuity Assessment</strong>
+                    Evaluate how clearly you see objects at near and far distances.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p><strong>Prescription Evaluation</strong>
+                    Assess refractive needs and identify appropriate vision correction.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p><strong>Eye Coordination</strong>
+                    Understand how effectively both eyes work together.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p><strong>Eye Health Evaluation</strong>
+                    Assess relevant eye structures and identify concerns that may need further care.</p>
+                </div>
+            </div>
+
+            <div class="service-detail-footer">
+                <a href="contact.html#contact-form" class="service-detail-btn">
+                    Book an Eye Examination <span>↗</span>
+                </a>
+                <span class="service-duration">PROFESSIONAL VISION CARE</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =====================================
+     02. PRESCRIPTION EYEWEAR
+====================================== -->
+<section class="service-detail-section service-detail-reverse"
+         id="prescription-eyewear">
+
+    <div class="service-detail-container">
+
+        <div class="service-detail-image">
+            <img src="images/service-detail service2.jpg"
+                 alt="Elegant prescription eyewear collection">
+            <span class="service-image-caption">02 — STYLE & CLARITY</span>
+        </div>
+
+        <div class="service-detail-content">
+            <span class="service-eyebrow">02 / PRESCRIPTION EYEWEAR</span>
+
+            <h2>Clarity Designed <em>Around You.</em></h2>
+
+            <p class="service-intro">
+                Your eyewear should feel as individual as you are.
+                Explore carefully selected frames and lens options
+                that bring together visual comfort, personal style
+                and thoughtful craftsmanship.
+            </p>
+
+            <div class="service-detail-divider"></div>
+
+            <h3>Discover Your Eyewear Options</h3>
+
+            <div class="service-detail-list">
+                <div>
+                    <span>01</span>
+                    <p><strong>Personalised Frame Selection</strong>
+                    Discover frame shapes, sizes and finishes suited to your preferences.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p><strong>Single-Vision Lenses</strong>
+                    Explore lenses designed for specific distance or near-vision needs.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p><strong>Progressive Lens Options</strong>
+                    Discover multifocal solutions for different viewing distances.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p><strong>Professional Frame Fitting</strong>
+                    Receive fitting and adjustment guidance for everyday comfort.</p>
+                </div>
+            </div>
+
+            <div class="service-detail-footer">
+                <a href="contact.html#contact-form" class="service-detail-btn">
+                    Find Your Perfect Eyewear <span>↗</span>
+                </a>
+                <span class="service-duration">STYLE MEETS PRECISION</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =====================================
+     03. SUNGLASSES & UV PROTECTION
+====================================== -->
+<section class="service-detail-section" id="sunglasses-uv">
+
+    <div class="service-detail-container">
+
+        <div class="service-detail-image">
+            <img src="images/service -detail service3.jpg"
+                 alt="Premium sunglasses and UV protective eyewear">
+            <span class="service-image-caption">03 — PROTECTION & STYLE</span>
+        </div>
+
+        <div class="service-detail-content">
+            <span class="service-eyebrow">03 / SUNGLASSES & UV PROTECTION</span>
+
+            <h2>Style Meets <em>Everyday Protection.</em></h2>
+
+            <p class="service-intro">
+                Step into the sunlight with confidence. Discover
+                sunglasses that complement your personal style while
+                offering UV-protective lens options and comfortable
+                everyday wear.
+            </p>
+
+            <div class="service-detail-divider"></div>
+
+            <h3>Explore Sunglass Features</h3>
+
+            <div class="service-detail-list">
+                <div>
+                    <span>01</span>
+                    <p><strong>UV Protection</strong>
+                    Explore lenses designed to help protect your eyes from ultraviolet radiation.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p><strong>Polarised Lens Options</strong>
+                    Consider polarised lenses to reduce reflected glare in suitable environments.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p><strong>Contemporary Frame Styles</strong>
+                    Choose from classic silhouettes and modern designs.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p><strong>Personalised Frame Guidance</strong>
+                    Find a comfortable fit and shape that complements your features.</p>
+                </div>
+            </div>
+
+            <div class="service-detail-footer">
+                <a href="contact.html#contact-form" class="service-detail-btn">
+                    Explore Sunglasses <span>↗</span>
+                </a>
+                <span class="service-duration">CONFIDENCE IN EVERY LIGHT</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =====================================
+     04. LENS REPLACEMENT
+====================================== -->
+<section class="service-detail-section service-detail-reverse"
+         id="lens-replacement">
+
+    <div class="service-detail-container">
+
+        <div class="service-detail-image">
+            <img src="images/service-detail service 4.png"
+                 alt="Optical lenses prepared for professional fitting">
+            <span class="service-image-caption">04 — PRECISION & PERFORMANCE</span>
+        </div>
+
+        <div class="service-detail-content">
+            <span class="service-eyebrow">04 / LENS REPLACEMENT</span>
+
+            <h2>Renew Your Lenses. <em>Rediscover Clarity.</em></h2>
+
+            <p class="service-intro">
+                Give your existing eyewear a fresh perspective.
+                Whether your prescription has changed or your lenses
+                need an update, discover replacement options selected
+                around your visual requirements and lifestyle.
+            </p>
+
+            <div class="service-detail-divider"></div>
+
+            <h3>Our Lens Replacement Solutions</h3>
+
+            <div class="service-detail-list">
+                <div>
+                    <span>01</span>
+                    <p><strong>Prescription Updates</strong>
+                    Explore replacement lenses based on your current prescription.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p><strong>Lens Materials</strong>
+                    Compare suitable lens materials for your prescription and preferences.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p><strong>Lens Coatings</strong>
+                    Discover available coatings for different visual and practical needs.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p><strong>Precision Fitting</strong>
+                    Ensure careful fitting, alignment and final comfort checks.</p>
+                </div>
+            </div>
+
+            <div class="service-detail-footer">
+                <a href="contact.html#contact-form" class="service-detail-btn">
+                    Enquire About Replacement <span>↗</span>
+                </a>
+                <span class="service-duration">A FRESH PERSPECTIVE</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- SMALL IMAGE + CONTENT CTA -->
+<section class="sd-split-cta">
+    <div class="sd-split-cta-image">
+        <img src="images/service-detail cta.png"
+             alt="Elegant premium eyewear displayed in warm natural light">
+    </div>
+
+    <div class="sd-split-cta-content">
+        <span class="sd-split-cta-label">YOUR VISION MATTERS</span>
+
+        <h2>A Clearer View Starts With You.</h2>
+
+        <p>
+            Give your vision the attention it deserves.
+            Discover personalised eye care and thoughtful
+            solutions designed around your everyday needs.
+        </p>
+
+        <a href="contact.html#contact-form" class="sd-split-cta-btn">
+            Book Your Appointment <span>↗</span>
+        </a>
+
+        <div class="sd-split-cta-note">
+            <span></span>
+            PRECISION · COMFORT · PERSONAL CARE
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+
+
+        <div class="footer-container">
+
+
+
+<div class="footer-brand">
+
+    <a
+        href="index.html"
+        class="footer-brand-link"
+    >
+
+        <div class="footer-brand-logo">
+
+            <img
+                src="images/logo2.png"
+                alt="Clear view Logo"
+            >
+
+        </div>
+
+
+        <div class="footer-brand-content">
+
+            <div class="footer-brand-name">
+
+               Clear View
+
+            </div>
+
+            <span class="footer-brand-tagline">
+                See Better...
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <p>
+      Clear View is dedicated to helping you experience 
+      the world with sharper, clearer vision through 
+      quality eyewear and expert eye care.
+    </p>
+
+
+
+                <div class="social-icons">
+
+
+
+                    <a
+                        href="https://www.facebook.com/"
+                        class="social-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        title="Facebook"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path
+                                d="M14 8h3V4h-3
+                                c-3.3 0-5 2-5 5v3H6v4h3v8h4v-8h3.2l.8-4H13V9
+                                c0-1 .3-1 1-1z"
+                            ></path>
+
+                        </svg>
+
+                    </a>
+
+
+
+                    <a
+                        href="https://www.instagram.com/"
+                        class="social-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        title="Instagram"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+
+                            <rect
+                                x="3"
+                                y="3"
+                                width="18"
+                                height="18"
+                                rx="5"
+                            ></rect>
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="4"
+                            ></circle>
+
+                            <circle
+                                cx="17.5"
+                                cy="6.5"
+                                r="1"
+                                fill="currentColor"
+                                stroke="none"
+                            ></circle>
+
+                        </svg>
+
+                    </a>
+
+
+
+                    <a
+                        href="https://x.com/"
+                        class="social-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="X"
+                        title="X"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path
+                                d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.24-8.28L2.8 2h6.4l4.42 5.85L18.9 2zm-1.1 17.9h1.73L8.28 3.98H6.43L17.8 19.9z"
+                            ></path>
+
+                        </svg>
+
+                    </a>
+
+
+
+                    <a
+                        href="https://www.linkedin.com/"
+                        class="social-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        title="LinkedIn"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path
+                                d="M6.5 8.5H3V21h3.5V8.5zM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3zM21 13.85c0-3.77-2.01-5.52-4.69-5.52-2.16 0-3.13 1.19-3.67 2.02V8.5H9.15V21h3.49v-6.19c0-1.63.31-3.21 2.33-3.21 1.99 0 2.02 1.86 2.02 3.31V21H21v-7.15z"
+                            ></path>
+
+                        </svg>
+
+                    </a>
+
+
+
+                    <a
+                        href="https://www.youtube.com/"
+                        class="social-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="YouTube"
+                        title="YouTube"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+
+                            <path
+                                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.8V8.2l6.4 3.8-6.4 3.8z"
+                            ></path>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+
+                <a href="services.html">
+                    Services
+                </a>
+
+
+                <a href="products.html">
+                    Products
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Our Services
+                </h3>
+
+
+                <a href="services.html">
+                    Comprehensive Eye Examination
+                </a>
+
+
+                <a href="services.html">
+                    Prescription Eyewear
+                </a>
+
+
+                <a href="services.html">
+                    Sunglasses & UV Protection
+                </a>
+
+
+                <a href="services.html">
+                    Lens Replacement
+                </a>
+
+                 <a href="services.html">
+                    Frame Fitting & Adjustment
+
+                </a>
+            </div>
+
+
+
+
+            <div
+                class="footer-column contact-column"
+            >
+
+                <h3>
+                    Contact Us
+                </h3>
+
+
+                <div class="contact-info">
+
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+
+                                <path
+                                    d="M22 16.92v3
+                                    a2 2 0 0 1-2.18 2
+                                    19.79 19.79 0 0 1-8.63-3.07
+                                    19.5 19.5 0 0 1-6-6
+                                    A19.79 19.79 0 0 1 2.12 4.18
+                                    A2 2 0 0 1 4.11 2h3
+                                    a2 2 0 0 1 2 1.72
+                                    12.84 12.84 0 0 0 .7 2.81
+                                    2 2 0 0 1-.45 2.11L8.09 9.91
+                                    a16 16 0 0 0 6 6l1.27-1.27
+                                    a2 2 0 0 1 2.11-.45
+                                    12.84 12.84 0 0 0 2.81.7
+                                    A2 2 0 0 1 22 16.92z"
+                                ></path>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div class="contact-text">
+
+                            <a href="tel:+910000000000">
+                                +91 00000 00000
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+
+                                <rect
+                                    x="3"
+                                    y="5"
+                                    width="18"
+                                    height="14"
+                                    rx="2"
+                                ></rect>
+
+                                <polyline
+                                    points="3,7 12,13 21,7"
+                                ></polyline>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div class="contact-text">
+
+                            <a
+                                href="mailto:info@aquascape.com"
+                            >
+                                info@clearview.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+
+                                <path
+                                    d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"
+                                ></path>
+
+                                <circle
+                                    cx="12"
+                                    cy="10"
+                                    r="3"
+                                ></circle>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div class="contact-text">
+
+                            Hyderabad, India
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="9"
+                                ></circle>
+
+                                <polyline
+                                    points="12,7 12,12 15,15"
+                                ></polyline>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div class="contact-text">
+
+                            Mon - Sat: 9:00 AM - 6:00 PM
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="footer-bottom">
+
+
+            <div class="copyright">
+
+                &copy; 2026 Clearview.
+                All Rights Reserved.
+
+            </div>
+
+
+            <div class="legal-links">
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+
+                <a href="terms.html">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+    <script>
+
+
+ 
+const body = document.body;
+const themeBtn = document.getElementById("themeBtn");
+const directionBtn = document.getElementById("directionBtn");
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+ 
+ 
+ 
+const savedTheme = localStorage.getItem("aquascape-theme");
+ 
+if (savedTheme === "dark") {
+    body.classList.add("dark");
+}
+ 
+ 
+ 
+themeBtn.addEventListener("click", function () {
+    body.classList.toggle("dark");
+ 
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("aquascape-theme", "dark");
+    } else {
+        localStorage.setItem("aquascape-theme", "light");
+    }
+});
+ 
+ 
+ 
+const savedDirection = localStorage.getItem("aquascape-direction");
+ 
+if (savedDirection === "rtl") {
+    document.documentElement.dir = "rtl";
+} else {
+    document.documentElement.dir = "ltr";
+}
+ 
+ 
+ 
+directionBtn.addEventListener("click", function () {
+    if (document.documentElement.dir === "ltr") {
+        document.documentElement.dir = "rtl";
+        localStorage.setItem("aquascape-direction", "rtl");
+    } else {
+        document.documentElement.dir = "ltr";
+        localStorage.setItem("aquascape-direction", "ltr");
+    }
+});
+ 
+ 
+ 
+menuBtn.addEventListener("click", function () {
+    mainNav.classList.toggle("show");
+});
+ 
+ 
+ 
+document.querySelectorAll(".main-nav a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        if (window.innerWidth <= 850) {
+            const isDropdownParent = link.closest(".home-dropdown");
+ 
+            if (!isDropdownParent || link.closest(".dropdown-menu")) {
+                mainNav.classList.remove("show");
+            }
+        }
+    });
+});
+ 
+ 
+ 
+function normalizePath(path) {
+    return path
+        .toLowerCase()
+        .replace(/\/+$/, "")
+        .replace(/\.html$/, "");
+}
+ 
+const currentPath = normalizePath(window.location.pathname);
+ 
+document
+    .querySelectorAll(".nav-link, .dropdown-menu a")
+    .forEach(function (link) {
+        link.classList.remove("active");
+        link.removeAttribute("aria-current");
+    });
+ 
+document
+    .querySelectorAll(".nav-link, .dropdown-menu a")
+    .forEach(function (link) {
+        const href = link.getAttribute("href");
+ 
+        if (!href || href.startsWith("#")) {
+            return;
+        }
+ 
+        const linkPath = normalizePath(
+            new URL(href, window.location.href).pathname
+        );
+ 
+        if (linkPath === currentPath) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+ 
+ 
+ 
+const homeDropdown = document.querySelector(".home-dropdown");
+ 
+if (homeDropdown) {
+    const homeParentLink = homeDropdown.querySelector(":scope > .nav-link");
+    const activeDropdownLink = homeDropdown.querySelector(
+        ".dropdown-menu a.active"
+    );
+ 
+    if (homeParentLink && activeDropdownLink) {
+        homeParentLink.classList.add("active");
+        homeParentLink.setAttribute("aria-current", "page");
+    }
+}
+ 
+lucide.createIcons();
+
+
+    </script>
+
+
+</body>
+
+</html>
